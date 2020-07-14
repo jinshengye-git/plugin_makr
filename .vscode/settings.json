@@ -1,0 +1,10 @@
+{
+	"files.exclude": {
+		"/home/jinshengye/Desktop/testPlugin/plugin_makr/.vscode": true,
+		"/home/jinshengye/Desktop/testPlugin/plugin_makr/Content": true,
+		"/home/jinshengye/Desktop/testPlugin/plugin_makr/DerivedDataCache": true,
+		"/home/jinshengye/Desktop/testPlugin/plugin_makr/Intermediate": true,
+		"/home/jinshengye/Desktop/testPlugin/plugin_makr/Saved": true,
+		"/home/jinshengye/Desktop/testPlugin/plugin_makr/Plugins/CSWUtilities/Intermediate": true
+	}
+}

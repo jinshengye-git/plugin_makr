@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "plugin_makr (Debug)",
+			"request": "launch",
+			"preLaunchTask": "plugin_makr Linux Debug Build",
+			"program": "/home/jinshengye/Desktop/testPlugin/plugin_makr/Binaries/Linux/plugin_makr-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/jinshengye/app/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "plugin_makr (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "plugin_makr Linux DebugGame Build",
+			"program": "/home/jinshengye/Desktop/testPlugin/plugin_makr/Binaries/Linux/plugin_makr-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/jinshengye/app/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "plugin_makr (Development)",
+			"request": "launch",
+			"preLaunchTask": "plugin_makr Linux Development Build",
+			"program": "/home/jinshengye/Desktop/testPlugin/plugin_makr/Binaries/Linux/plugin_makr",
+			"args": [
+			],
+			"cwd": "/home/jinshengye/app/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "plugin_makr (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "plugin_makr Linux Shipping Build",
+			"program": "/home/jinshengye/Desktop/testPlugin/plugin_makr/Binaries/Linux/plugin_makr-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/jinshengye/app/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "plugin_makr (Test)",
+			"request": "launch",
+			"preLaunchTask": "plugin_makr Linux Test Build",
+			"program": "/home/jinshengye/Desktop/testPlugin/plugin_makr/Binaries/Linux/plugin_makr-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/jinshengye/app/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "plugin_makrEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "plugin_makrEditor Linux Debug Build",
+			"program": "/home/jinshengye/app/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject"
+			],
+			"cwd": "/home/jinshengye/app/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "plugin_makrEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "plugin_makrEditor Linux DebugGame Build",
+			"program": "/home/jinshengye/app/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-DebugGame",
+			"args": [
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject"
+			],
+			"cwd": "/home/jinshengye/app/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "plugin_makrEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "plugin_makrEditor Linux Development Build",
+			"program": "/home/jinshengye/app/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject"
+			],
+			"cwd": "/home/jinshengye/app/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/jinshengye/app/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/jinshengye/app/UnrealEngine"
+		}
+	]
+}

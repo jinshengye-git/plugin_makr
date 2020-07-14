@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{000482BB-08D8-18A0-C655-7944A1C78E86}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "plugin_makr",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

@@ -1,0 +1,1985 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "plugin_makr Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Mac",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"IOS",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"Linux",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr LinuxAArch64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr LinuxAArch64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr LinuxAArch64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr LinuxAArch64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr LinuxAArch64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr LinuxAArch64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"LinuxAArch64",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"TVOS",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr XXX Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr XXX DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr XXX Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr XXX Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Shipping",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makr XXX Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makr XXX Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makr",
+				"XXX",
+				"Test",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Linux",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Linux",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makrEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Linux",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Linux",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Linux",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makrEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Linux",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Linux",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Linux",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makrEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Linux",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Mac",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Mac",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makrEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Mac",
+				"Debug",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Mac",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Mac",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makrEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Mac",
+				"DebugGame",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Mac",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Mac",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"plugin_makrEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		},
+		{
+			"label": "plugin_makrEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"plugin_makrEditor",
+				"Mac",
+				"Development",
+				"/home/jinshengye/Desktop/testPlugin/plugin_makr/plugin_makr.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/jinshengye/app/UnrealEngine"
+			}
+		}
+	]
+}
